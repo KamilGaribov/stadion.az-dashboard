@@ -1,0 +1,70 @@
+body *, html *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000000dd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #999896;
+}
+#friends{
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    margin: 120px 0 0 270px;
+    /* border: 1px solid black; */
+    background-color: white;
+    overflow: hidden;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;    
+    background-color: #8c3635;
+    top: 0;
+    right: 0;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    display: none;
+}
+.cover img{
+    height: 80%;
+    width: auto;
+    filter: invert(100%);
+}
+.cover span{
+    font-size: 50px;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 2%;
+    background-color: aqua;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(auto-fit, minmax(12%, 12%));
+    justify-content: center;
+    align-items: flex-end;
+}
+.container > div{
+    display: grid;
+    grid-template-columns: 10% 75% 5% 5% 5%;
+    /* border: 1px solid black; */
+    border-bottom: 0.5px solid #00000044;
+    /* background-color: red; */
+}
+.container img{
+    width: 20px;
+}
